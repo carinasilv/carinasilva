@@ -1,0 +1,181 @@
+body,html {
+    margin: 0;
+    height: 100%;
+
+}
+
+h1{
+    padding-top: 30px;
+    font-family: 'comba', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+h3, p{
+    font-size: 30px;
+}
+
+body{
+    background-color: #823A3C;
+
+    font-family: "Beiruti", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #F7F0E4 ;
+    text-align: center;
+    height: 100%; 
+}
+
+#top_right{
+    background: #823A3C url("../images/O.png") no-repeat top right;
+    background-size: 30%;
+
+}
+
+#bottom_left{
+    background: #823A3C url("../images/O.png") no-repeat top left;
+    background-size: 30%;
+    
+}
+
+button{
+    border-radius: 30px;
+}
+
+#first_btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.first_btn{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: 220px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+
+
+.cat{
+    background-image: url('../images/cat1.png');
+    background-size: contain;
+    background-position: bottom;
+}
+
+.cat:hover{
+    background-size: cover;
+}
+
+.mouse{
+    background-image: url('../images/mouse1.png');
+    background-size: contain;
+    background-position: bottom;
+}
+
+.mouse:hover{
+    background-size: cover;
+}
+
+.dog{
+    background-image: url('../images/dog1.png');
+    background-size: contain;
+    background-position: bottom;
+}
+
+.dog:hover{
+    background-size: cover;
+}
+
+.results{
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    height: 350px;
+    padding-bottom: 20px;
+}
+
+.symbol {
+    margin-top: 120px;
+    width: 74px;
+    height: 74px;
+}
+
+.symbol2 {
+    margin-top: 120px;
+    width: 74px;
+    height: 74px;
+}
+
+.catShadow {
+    background-image: url('../images/shadowCat.png');
+    background-size: contain;
+    background-position: bottom;
+}
+
+.mouseShadow {
+    background-image: url('../images/shadowMouse.png');
+    background-size: contain;
+    background-position: bottom;
+}
+
+.dogShadow {
+    background-image: url('../images/shadowDog.png');
+    background-size: contain;
+    background-position: bottom;
+}
+
+#scoreboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; 
+    align-content: top;
+}
+
+#resetbutton{
+    color: #823A3C;
+    background: #e88e8e;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    font-family: "Beiruti", sans-serif;
+    font-size: 24px;
+}
+
+#resetbutton:hover{
+    color: #e88e8e;
+    background: #823A3C;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid #e88e8e;
+    font-family: "Beiruti", sans-serif;
+    font-size: 24px;
+    margin:0auto;
+}
+
+.results img {
+    opacity: 0;
+    transform: scale(0.1) translateY(2px);
+    animation: popIn 0.5s ease-in forwards;
+}
+
+@keyframes popIn {
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
